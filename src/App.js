@@ -27,7 +27,6 @@ const App = () => {
       <About data={resumeData.main} />
       <Resume data={resumeData.resume} />
       <Portfolio data={resumeData.portfolio} />
-      <Contact data={resumeData.main} />
       <Footer data={resumeData.main} />
     </div>
   );
