@@ -1,0 +1,77 @@
+{
+  "main": {
+    "name": "Quynh-Anh Vu",
+    "occupation": "Student at University of Houston",
+    "description": "Software developer in the making",
+    "image": "profilepic.jpg",
+    "bio": "Hi there! I'm Quynh-Anh, a junior at University of Houston majoring in Computer Science, graduating in May 2022. I'm interested in the software engineering field and am currently looking for full-time roles in this area.",
+    "contactmessage": "",
+    "email": "quynhanhtvu@gmail.com",
+    "phone": "+1 8328051706",
+    "address": {
+      "city": "Friendswood",
+      "state": "TX",
+      "zip": "77546"
+    },
+    "website": "https://www.github.com/Alicesyn",
+    "resumedownload": "",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/quynhanh-vu/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://www.github.com/Alicesyn",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "",
+    "education": [
+      {
+        "school": "University of Houston",
+        "degree": "Bachelor's Degree, Computer Science",
+        "graduated": "May 2022",
+        "description": "Currently on the Dean's Distinguished Scholars List"
+      }
+    ],
+    "work": [
+      {
+        "company": "The Boeing Company",
+        "title": "Software Engineer Intern",
+        "years": "August 2021 - Present",
+        "description": "Created a UI in Blazor for employees to access DevOps test results via web API and ASP.NET framework"
+      }
+    ],
+    "skills": [
+      {
+        "name": "C++, C#, Python, Java, JavaScript, R, HTML, CSS, SQL"
+      },
+      {
+        "name": "React, Blazor, Unity, ASP.NET, Node.js, Redux, Axios, Spring"
+      },
+      {
+        "name": "Git, Docker, MongoDB, Visual Studio, Windows, Mac OS, Photoshop, Premiere Pro"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Cryptocurrency Tracker (React JS)",
+        "category": "",
+        "image": "crypto.png",
+        "url": "https://github.com/Alicesyn/react-crypto-tracker"
+      },
+      {
+        "title": "CS:GO Text Mod",
+        "category": "",
+        "image": "csgo.png",
+        "url": "https://github.com/Alicesyn/CSGO-Text-Mod"
+      }
+    ]
+  }
+}
