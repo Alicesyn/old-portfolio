@@ -39,7 +39,7 @@ const Resume = ({ data }) => {
   }
 
   return (
-    <section id="resume">
+    <section id="experience">
       <div className="row education">
         <div className="three columns header-col">
           <h1>

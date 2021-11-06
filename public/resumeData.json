@@ -44,6 +44,12 @@
         "title": "Software Engineer Intern",
         "years": "August 2021 - Present",
         "description": "Created a UI in Blazor for employees to access DevOps test results via web API and ASP.NET framework"
+      },
+      {
+        "company": "University of Houston",
+        "title": "Computer Science Mentor",
+        "years": "Jan 2021- May 2021",
+        "description": "Held office hours to assist university students in multiple beginner computer science courses"
       }
     ],
     "skills": [
