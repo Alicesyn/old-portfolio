@@ -14,7 +14,7 @@
       "zip": "77546"
     },
     "website": "https://www.github.com/Alicesyn",
-    "resumedownload": "",
+    "resumedownload": "https://alicesyn.github.io/static/quynhanh_vu_resume",
     "social": [
       {
         "name": "linkedin",
@@ -57,7 +57,7 @@
         "name": "C++, C#, Python, Java, JavaScript, R, HTML, CSS, SQL"
       },
       {
-        "name": "React, Blazor, Unity, ASP.NET, Node.js, Redux, Axios, Spring"
+        "name": "React, Blazor, Unity, ASP.NET, Node.js, Axios"
       },
       {
         "name": "Git, Docker, MongoDB, Visual Studio, Windows, Mac OS, Photoshop, Premiere Pro"
@@ -68,15 +68,33 @@
     "projects": [
       {
         "title": "Cryptocurrency Tracker (React JS)",
-        "category": "",
+        "category": "public",
         "image": "crypto.png",
         "url": "https://github.com/Alicesyn/react-crypto-tracker"
       },
       {
-        "title": "CS:GO Text Mod",
-        "category": "",
+        "title": "CS:GO Custom Text Mod",
+        "category": "public",
         "image": "csgo.png",
         "url": "https://github.com/Alicesyn/CSGO-Text-Mod"
+      },
+      {
+        "title": "The Final Concerto (C#, Unity)",
+        "category": "public",
+        "image": "unity.png",
+        "url": "https://github.com/Runtime-Terror-Game-Dev/action-platformer"
+      },
+      {
+        "title": "Wine Quality Data Analysis (R)",
+        "category": "private",
+        "image": "redwine.jpg",
+        "url": "#projects"
+      },
+      {
+        "title": "Robosyn Discord Bot (Java)",
+        "category": "private",
+        "image": "discord.png",
+        "url": "#projects"
       }
     ]
   }
