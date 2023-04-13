@@ -7,43 +7,39 @@ import gosave from "assets/images/projects/gosave.png";
 export const projectsList = [
   {
     id: 1,
-    title: "Peterpitch",
+    title: "Restaurant Ordering Website",
     logo: peterpitch,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
-    link: "https://peterpitch.com/",
-    desc: `Peterpitch is a tool that takes the fun in your company seriously and turns your meetings into real performance boosters. With Peterpitch, you round up the pack of employees and turn even the shakiest puppies into true wolves.`,
-    technologies: ["rails", "react", "javascript"]
+    link: "https://github.com/COSC4353-group-22/fuel-assignment",
+    desc: ``,
+    technologies: ["React", "JavaScript", "Express", "Jest", "PostgreSQL"]
   },
   {
     id: 2,
-    title: "Notch",
-    link: "https://www.hellonotch.com/",
+    title: "Augmented Reality Museum",
+    link: "https://github.com/Alicesyn/AR-Museum-2",
     logo: notch,
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
-    desc: `This is a project management website for design and procurement teams. 
-    It helps to collaborate and manage all of your floor plans in one place, writing specs, budgeting and timelines. 
-    This project management website provides a wide variety of features like timeline tracking, spec sheet generation, integrated budget, vendor + inventory management, user usage tracking and many more.`,
-    technologies: ["ruby", "rails", "javascript"]
+    desc: `Created a virtual museum in Unity’s augmented reality, themed under different historical periods
+    Utilized Microsoft’s MRTK toolkit to have the app function and deploy on mobile devices and HoloLens`,
+    technologies: ["C#", "Unity", "Microsoft MRTK", "Autodesk Maya"]
   },
   {
     id: 3,
-    title: "Workof Ecommerce",
+    title: "The Final Concerto Game",
     logo: workof,
     blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
     link: "https://workof.com/",
-    desc: `This is an Ecommerce furniture site. It provides a single platform to multiple vendors where they can put their products on sale.`,
+    desc: `Managed a group of 6 to produce original music, art, game mechanics, and level designs, resulting in an ‘A’ for the class after an evaluation from over 20 industry professionals`,
     technologies: ["ruby", "rails", "javascript"]
   },
   {
     id: 4,
-    title: "Souq of Qatar",
+    title: "CS:GO Text Mod",
     logo: souq,
     blurHash: "L1O^uE0679I00AGT?.H{00y7p2tK",
     link: "https://www.souqofqatar.com/",
-    desc: `Souq of Qatar is online comparison website. This website is independent of any retailers, it displays the products of all the major stores.
-    Just like when you compare prices and products while visiting physical shops and stores, online price comparison behaves in the same way. 
-    It is an established method in the West for people to visit the online comparison websites first whenever they are in need to buy something. 
-    This provides the benefits of convenience, choice, and price efficiency.`,
+    desc: `Constructed an open-source anti-cheat friendly mod that color-codes and simplifies in-game text`,
     technologies: ["ruby", "rails", "javascript"]
   },
   {

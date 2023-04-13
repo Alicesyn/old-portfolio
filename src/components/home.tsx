@@ -17,7 +17,7 @@ import Header from "./header";
 import Projects from "./projects";
 import { projectsList } from "data/projects-list";
 import "style/style.css";
-import UserIcon from "assets/images/user_icon.png";
+import UserIcon from "assets/images/profilepic.jpg";
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";
@@ -74,22 +74,19 @@ const Home = () => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{" "}
             <Box as="strong" fontWeight="600">
-              Ahmad
+              Quynh-Anh
             </Box>{" "}
             and I&apos;m a{" "}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              Full Stack Developer
             </Box>{" "}
-            <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box>
             from{" "}
             <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
+              Houston, Texas
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I'm
+            This is my digital portfolio, where I write about the things I'm
             working on and share what I've learned. 😊
           </Box>
         </MotionFlex>
@@ -143,11 +140,6 @@ const Home = () => {
               <ListItem>
                 <Link as={NavLink} to="/tech-stack">
                   Tech Stack
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={NavLink} to="/achievements">
-                  Achievements
                 </Link>
               </ListItem>
             </UnorderedList>

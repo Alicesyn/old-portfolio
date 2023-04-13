@@ -9,7 +9,7 @@ import {
   PopoverTrigger,
   PopoverArrow,
   PopoverContent,
-  PopoverBody
+  PopoverBody, PlacementWithLogical
 } from "@chakra-ui/react";
 import { FiCheckCircle } from "react-icons/fi";
 
@@ -43,10 +43,9 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
           returnFocusOnClose={false}
           isOpen={isOpen}
           onClose={close}
-          placement={place}
+          placement={place as PlacementWithLogical}
           closeOnBlur={false}
           // variant="responsive"
-          width={["9.3rem", "13rem", "15rem", "100%"]}
         >
           <PopoverTrigger>
             <Box onClick={open} position="relative">

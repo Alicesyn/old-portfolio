@@ -22,29 +22,26 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "ColorModeSwitcher";
-import UserIcon from "assets/images/user_icon.png";
+import UserIcon from "assets/images/profilepic.jpg";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
-import { BsCheckCircle } from "react-icons/bs";
 import { MdTimeline } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 
 const webLinks = [
   { name: "About", path: "/about" },
-  { name: "Blog", path: "/blog" }
 ];
 
 const mobileLinks = [
   { name: "About", path: "/about" },
   { name: "Open Source", path: "/open-source" },
-  { name: "Blog", path: "/blog" },
   { name: "Tech Stack", path: "/tech-stack" },
   { name: "Developer Story", path: "/story-timeline" }
   
 ];
 
 interface NavLinkProps {
-  index?: string;
+  index?: string | number;
   name: string;
   path: string;
   onClose: () => void;
@@ -103,7 +100,7 @@ export default function TopNav() {
               <Avatar
                 as={Link}
                 size={"sm"}
-                href={"/portfolio"}
+                href={"/"}
                 src={UserIcon}
                 // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
               />
@@ -175,18 +172,6 @@ export default function TopNav() {
                       </HStack>
                     </MenuItem>
                   </Link>
-                  <Link as={RouterNavLink} to="/achievements">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={BsCheckCircle}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Achievements</Text>
-                      </HStack>
-                    </MenuItem>
-                  </Link>
                 </MenuList>
               </Menu>
             </HStack>
@@ -194,7 +179,7 @@ export default function TopNav() {
           <Flex alignItems={"center"}>
             <IconButton
               as={Link}
-              href={"https://github.com/MA-Ahmad"}
+              href={"https://github.com/Alicesyn"}
               size={"md"}
               icon={<FaGithub />}
               aria-label={"Github account"}

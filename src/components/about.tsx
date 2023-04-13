@@ -61,14 +61,12 @@ const Card = (props: CardProps) => {
             />
             <Stack spacing={2} pl={3} align="left">
               <Heading
-                align="left"
                 fontSize="xl"
                 color={`mode.${colorMode}.career.text`}
               >
                 {title}
               </Heading>
               <Heading
-                align="left"
                 fontSize="sm"
                 color={`mode.${colorMode}.career.subtext`}
               >
@@ -142,7 +140,7 @@ const About = () => {
                 period={company.period}
                 logo={company.logo}
                 colorMode={colorMode}
-              />
+                alt={company.alt}/>
             </MotionBox>
           ))}
         </VStack>
@@ -167,6 +165,7 @@ const About = () => {
                 period={institute.period}
                 logo={institute.logo}
                 colorMode={colorMode}
+                alt={institute.alt}
               />
             </MotionBox>
           ))}

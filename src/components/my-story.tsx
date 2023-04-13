@@ -25,7 +25,7 @@ const MyStory = () => {
       <Section mb={14}>
         <PageSlideFade>
           <VStack>
-            <Header mt={0} mb={1}>
+            <Header mt={0} mb={1} underlineColor={''}>
               Developer Story
             </Header>
             {/* <Text

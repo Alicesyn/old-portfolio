@@ -56,7 +56,6 @@ const SkillCard = ({ name, image, link, description }) => {
                   src={image}
                   height={26}
                   width={26}
-                  layout="fixed"
                   rounded="md"
                 />
               )}
@@ -68,7 +67,7 @@ const SkillCard = ({ name, image, link, description }) => {
               maxW="lg"
               h="100%"
             >
-              <VStack spacing={0} align="start" flexGrow="1">
+              <VStack spacing={0} align="start">
                 <Text fontWeight="bold" fontSize="md" noOfLines={2}>
                   {name}
                 </Text>

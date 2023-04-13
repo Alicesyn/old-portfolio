@@ -23,7 +23,7 @@ const OfflineData = () => {
                 live={repo.live}
                 stars={repo.stars}
                 fork={repo.fork}
-              />
+                created={''}/>
             </MotionBox>
           ))}
         </SimpleGrid>

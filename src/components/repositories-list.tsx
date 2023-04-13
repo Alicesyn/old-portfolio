@@ -13,7 +13,7 @@ import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
 import OfflineData from "./offline-data";
 import LiveData from "./live-data";
 import useSound from "use-sound";
-import lightswitch from "assets/audios/lightswitch.mp3";
+import lightswitch from "../assets/audios/lightswitch.mp3";
 
 const TURQUOISE = "#06b6d4";
 

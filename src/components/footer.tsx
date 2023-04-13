@@ -35,7 +35,6 @@ const Footer = () => {
         justifyContent={["center", "space-between"]}
         alignItems="center"
         w="100%"
-        ju
       >
         {/* <HStack> */}
         <Text
@@ -43,7 +42,7 @@ const Footer = () => {
           fontSize="sm"
           color={useColorModeValue("gray.500", "gray.200")}
         >
-          © {new Date().getFullYear()} Muhammad Ahmad{" "}
+          © {new Date().getFullYear()} Quynh-Anh Vu{" "}
         </Text>
         {/* <Box fontSize="md" textAlign="left">
         Website built with

@@ -1,8 +1,6 @@
-import PhaedraLogo from "assets/images/logos/phaedra.jpeg";
-import BrainxLogo from "assets/images/logos/brainxtech.png";
-import CodenyaLogo from "assets/images/logos/codenya.png";
-import BrainplowLogo from "assets/images/logos/brainplow.jpg";
-import UniLogo from "assets/images/logos/fast.png";
+import JPMCLogo from "assets/images/logos/JPMCLogo.png";
+import BoeingLogo from 'assets/images/logos/BoeingLogo.png'
+import UHLogo from "assets/images/logos/UH.png";
 import figma from "assets/images/skills/figma.png";
 import vscode from "assets/images/skills/vscode.png";
 import react from "assets/images/skills/react.png";
@@ -24,61 +22,53 @@ import nginx from "assets/images/skills/nginx.png";
 
 export const companies = [
   {
-    title: "Phaedra Solutions",
-    alt: "PS image",
-    role: "Senior Software Engineer",
-    skills: ["ruby", "rails", "typescript", "javascript", "react", "aws"],
-    period: "2019 - Present",
-    logo: PhaedraLogo
-  },
-  {
-    title: "Brainx Technologies",
-    alt: "BT image",
+    title: "JPMorgan Chase & Co.",
+    alt: "JPMC image",
     role: "Software Engineer",
-    skills: ["ruby", "rails", "javascript", "python"],
-    period: "2018 - 2019",
-    logo: BrainxLogo
+    skills: ["Java", "React", "TypeScript", "JavaScript", "SQL", "Oracle", "Spring", "Maven", "Cypress", "Jenkins", "AWS"],
+    period: "Jul 2022 - Present",
+    logo: JPMCLogo
   },
   {
-    title: "Codenya Studio",
-    alt: "CS image",
-    role: "Co-founder, CTO",
-    skills: ["ruby", "rails", "python", "typescript", "react", "aws"],
-    period: "2018 - Present",
-    logo: CodenyaLogo
+    title: "Boeing",
+    alt: "Boeing image",
+    role: "Software Engineer Intern",
+    skills: ["C#", "ASP.NET", ".NET", "Blazor", "Docker", "Pandoc", "AngleSharp"],
+    period: "Aug 2021 - May 2022",
+    logo: BoeingLogo
   },
   {
-    title: "Brainplow",
-    alt: "Brainplow image",
-    role: "Software Engineer",
-    skills: ["javascript", "python", "angular"],
-    period: "2017 - 2018",
-    logo: BrainplowLogo
-  }
+    title: "University of Houston",
+    alt: "UH image",
+    role: "Computer Science Tutor",
+    skills: ["C++", "Python"],
+    period: "Jan 2021 - May 2021",
+    logo: UHLogo
+  },
 ];
 
 export const institutes = [
   {
-    short_title: "FAST - NUCES",
-    title: "National University of Computer and Emerging Sciences",
-    alt: "Nuces image",
+    short_title: "UH",
+    title: "University of Houston",
+    alt: "UH image",
     role: "Bachelor's Degree in Computer Science",
-    skills: ["project management", "web development", "data structures"],
-    period: "2013 - 2017",
-    startingYear: "2013",
-    logo: UniLogo,
+    skills: ["data structures", "operating systems", "software design", "game development", "computer graphics"],
+    period: "Aug 2019 - May 2022",
+    startingYear: "2019",
+    logo: UHLogo,
     awards: [
       {
-        title: "Speed Programming Battle",
+        title: "Magna Cum Laude",
         description:
-          "Won speed programming battle which held at FAST - NUCES.",
-        date: "May 1, 2015"
+          "Graduated with high honors",
+        date: "May 2022"
       },
       {
-        title: "Silver Medal",
+        title: "Dean's List",
         description:
-          "This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.",
-        date: "May 1, 2014"
+          "On the Dean's List during all semesters",
+        date: "Aug 2019 - May 2022"
       },
       {
         title: "Speed Programming Battle",
@@ -88,16 +78,6 @@ export const institutes = [
       }
     ]
   },
-  {
-    short_title: "Govt Degree College",
-    title: "Govt Degree College",
-    alt: "college image",
-    role: "FSC",
-    skills: ["mathematic", "chemistry", "physics"],
-    period: "2011 - 2013",
-    startingYear: "2011",
-    logo: ""
-  }
 ];
 
 export const skills = [

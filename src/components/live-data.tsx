@@ -8,17 +8,17 @@ import StackGrid from "react-stack-grid";
 import CardSkeleton from "./card-skeleton";
 
 const LiveData = () => {
-  const { get, loading, error, data } = useFetch("https://api.github.com");
+  const { get, loading} = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
   const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
   const [isLargerThan982] = useMediaQuery("(min-width: 982px)");
 
-  let columnWidth = 390;
+  let columnWidth: string = "390";
   if (isLargerThan982) {
-    columnWidth = 390;
+    columnWidth = "390";
   } else {
     if (isLargerThan720) {
-      columnWidth = 300;
+      columnWidth = "300";
     } else {
       columnWidth = "100%";
     }
@@ -30,7 +30,7 @@ const LiveData = () => {
         res?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 8)
       );
     });
-  }, []);
+  }, [get]);
 
   return (
     <PageSlideFade>
@@ -47,7 +47,6 @@ const LiveData = () => {
                 description={repo.description}
                 language={repo.language}
                 url={repo.svn_url}
-                created_at={repo.created_at}
                 stargazers_count={repo.stargazers_count}
                 forks_count={repo.forks_count}
               />

@@ -2,11 +2,11 @@ import {
   Box,
   Flex,
   Image,
-  Skeleton,
   forwardRef,
 } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
 import placeholder from "assets/images/placeholder.png";
+import React from "react";
 
 export const MotionBox = motion.custom(
   forwardRef((props, ref) => {

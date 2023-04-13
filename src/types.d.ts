@@ -1,13 +1,4 @@
-type project = {
-    id: number;
-    title: string;
-    logo: string;
-    link: string;
-    desc: string;
-    tech: string[];
-  };
-
-  type article = {
+type article = {
     title: string;
     desc: string;
     link: string;
@@ -15,5 +6,9 @@ type project = {
     published: string;
     tags: string[];
     github_url: string;
-  }
-  
+}
+
+declare module '*.mp3' {
+    const src: string;
+    export default src;
+}

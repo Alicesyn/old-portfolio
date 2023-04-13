@@ -179,15 +179,23 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "rails" || type === "ruby") {
+  if (type === "kafka" || type === "aws") {
     return "red";
-  } else if (type === "react") {
+  } else if (type === "react" || type === "r") {
     return "cyan";
-  } else if (type === "javascript") {
+  } else if (type === "javascript" || type === "c#" || type === "unity" || type === "python" || type === "asp.net") {
     return "yellow";
   } else if (type === "typescript" || type === "tailwindcss") {
     return "blue";
-  } else if (type === "chakraui" || type === "css") {
+  } else if (type === "chakraui" || type === "css" || type === "jest" || type === "docker") {
     return "teal";
+  } else if (type === "blazor" || type === "node.js" || type === "autodesk maya") {
+    return "purple";
+  } else if (type === "spring" || type === "maven" || type === "express" || type === "cypress" || type === "microsoft mrtk") {
+    return "green";
+  } else if (type === "oracle" || type === "postgresql" || type === "mysql") {
+    return "orange";
+  } else if (type === "docker" || type === "jenkins" || type === "kubernetes") {
+    return "grey";
   }
 };

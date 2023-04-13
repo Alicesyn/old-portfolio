@@ -4,6 +4,7 @@ import ProjectCard from "./project-card";
 import Header from "./header";
 import { AnimateSharedLayout } from "framer-motion";
 import { MotionBox } from "./motion";
+import {project} from "../types/project"
 
 interface ProjectsProps {
   projects: project[];
