@@ -41,7 +41,7 @@ export const companies = [
     title: "University of Houston",
     alt: "UH image",
     role: "Computer Science Tutor",
-    skills: ["C++", "Python"],
+    skills: ["C", "C++", "C#", "Python", "R", "SQL"],
     period: "Jan 2021 - May 2021",
     logo: UHLogo
   },
@@ -70,12 +70,6 @@ export const institutes = [
           "On the Dean's List during all semesters",
         date: "Aug 2019 - May 2022"
       },
-      {
-        title: "Speed Programming Battle",
-        description:
-          "Won speed programming battle which held at FAST - NUCES.",
-        date: "Nov 1, 2013"
-      }
     ]
   },
 ];

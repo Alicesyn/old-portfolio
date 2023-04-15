@@ -26,7 +26,6 @@ import UserIcon from "assets/images/profilepic.jpg";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { MdTimeline } from "react-icons/md";
-import { BsBook } from "react-icons/bs";
 
 const webLinks = [
   { name: "About", path: "/about" },
@@ -34,7 +33,6 @@ const webLinks = [
 
 const mobileLinks = [
   { name: "About", path: "/about" },
-  { name: "Open Source", path: "/open-source" },
   { name: "Tech Stack", path: "/tech-stack" },
   { name: "Developer Story", path: "/story-timeline" }
   
@@ -145,18 +143,6 @@ export default function TopNav() {
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
                         <Text>Tech Stack</Text>
-                      </HStack>
-                    </MenuItem>
-                  </Link>
-                  <Link as={RouterNavLink} to="/open-source">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={BsBook}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Open Source</Text>
                       </HStack>
                     </MenuItem>
                   </Link>

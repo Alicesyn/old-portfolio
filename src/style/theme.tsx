@@ -179,21 +179,34 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "kafka" || type === "aws") {
+  if (type === "kafka" || type === "aws" || type === "axios") {
     return "red";
   } else if (type === "react" || type === "r") {
     return "cyan";
-  } else if (type === "javascript" || type === "c#" || type === "unity" || type === "python" || type === "asp.net") {
+  } else if (type === "javascript" || type === "c#" || type === "c++" || type === "python" || type === "asp.net") {
     return "yellow";
-  } else if (type === "typescript" || type === "tailwindcss") {
+  } else if (type === "typescript" || type === "tailwindcss" || type === "unity") {
     return "blue";
   } else if (type === "chakraui" || type === "css" || type === "jest" || type === "docker") {
     return "teal";
-  } else if (type === "blazor" || type === "node.js" || type === "autodesk maya") {
+  } else if (type === "blazor"
+      || type === "node.js"
+      || type === "autodesk maya"
+      || type === "photoshop"
+  ) {
     return "purple";
-  } else if (type === "spring" || type === "maven" || type === "express" || type === "cypress" || type === "microsoft mrtk") {
+  } else if (type === "spring"
+      || type === "maven"
+      || type === "express"
+      || type === "cypress"
+      || type === "microsoft mrtk"
+      ) {
     return "green";
-  } else if (type === "oracle" || type === "postgresql" || type === "mysql") {
+  } else if (type === "oracle"
+      || type === "postgresql"
+      || type === "mysql"
+      || type === "kaggle"
+  ) {
     return "orange";
   } else if (type === "docker" || type === "jenkins" || type === "kubernetes") {
     return "grey";
