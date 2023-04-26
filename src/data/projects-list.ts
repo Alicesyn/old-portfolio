@@ -14,7 +14,7 @@ export const projectsList = [
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
     link: "https://github.com/Alicesyn/order-website",
     desc: `This is my personal website containing my portfolio. You are here right now!`,
-    technologies: ["React", "TypeScript"]
+    technologies: ["React", "TypeScript", "HTML", "CSS", "ChakraUI"]
   },
   {
     id: 2,
@@ -31,8 +31,7 @@ export const projectsList = [
     link: "https://github.com/Alicesyn/AR-Museum-2",
     logo: museum,
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
-    desc: `Created a virtual museum in Unity’s augmented reality, themed under different historical periods
-    Utilized Microsoft’s MRTK toolkit to have the app function and deploy on mobile devices and HoloLens`,
+    desc: `Created a virtual museum in Unity’s augmented reality, themed under different historical periods`,
     technologies: ["C#", "Unity", "Microsoft MRTK", "Autodesk Maya"]
   },
   {
@@ -41,7 +40,7 @@ export const projectsList = [
     logo: concerto,
     blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
     link: "https://github.com/Alicesyn/The-Final-Concerto",
-    desc: `Managed a group of 6 to produce original music, art, game mechanics, and level designs, resulting in an ‘A’ for the class after an evaluation from over 20 industry professionals`,
+    desc: `Developed an original 2D platformer game with a group of 6, producing original music, art, game mechanics, and level designs`,
     technologies: ["C#", "Unity", "Photoshop"]
   },
   {
@@ -59,9 +58,7 @@ export const projectsList = [
     logo: crypto,
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
     link: "https://github.com/Alicesyn/react-crypto-tracker",
-    desc: `Displayed real-time top cryptocurrency prices on a responsive site using Coingecko API
-      Utilized React Hooks to enable search bar and set coin attributes fetched by Axios
-    `,
+    desc: `Displayed real-time top cryptocurrency prices on a responsive site using Coingecko API`,
     technologies: ["React", "JavaScript", "Axios"]
   },
   {
@@ -70,9 +67,7 @@ export const projectsList = [
     logo: wine,
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
     link: "https://gosavehq.com/",
-    desc: `Extracted data from Kaggle to implement predictive models that determine key predictors in quality
-      Trained the models on 1200 data points to get the mean testing error below 30% in R
-    `,
+    desc: `Extracted data from Kaggle to implement predictive models that determine key predictors in quality`,
     technologies: ["R", "Kaggle"]
   }
 ];

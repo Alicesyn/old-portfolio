@@ -179,7 +179,7 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "kafka" || type === "aws" || type === "axios") {
+  if (type === "kafka" || type === "aws" || type === "axios" || type === "html") {
     return "red";
   } else if (type === "react" || type === "r") {
     return "cyan";
