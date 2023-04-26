@@ -24,4 +24,4 @@ You will also see any lint errors in the console.
 To redeploy to GH Pages run:
 
 ### `yarn build`
-### `yarn deploy`
+### `gh-pages -d build`
