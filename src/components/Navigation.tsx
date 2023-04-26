@@ -1,24 +1,13 @@
 import * as React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import About from "./about";
-import RepositoriesList from "./repositories-list";
 import Home from "./home";
 import TechStack from "./tech-stack";
-// import EducationStory from "./education-story";
-import MyStory from "./my-story";
 
 const routes = [
   { path: "/", exact: true, name: "Home", component: Home },
-  { path: "/about", exact: true, name: "About", component: About },
-  {
-    path: "/open-source",
-    exact: true,
-    name: "OpenSource",
-    component: RepositoriesList
-  },
-  { path: "/tech-stack", exact: true, name: "Tools", component: TechStack },
-  { path: "/story-timeline", exact: true, name: "My Story", component: MyStory }
-
+  { path: "#", exact: true, name: "About", component: About },
+  { path: "#tech-stack", exact: true, name: "Tools", component: TechStack },
 ];
 const Navigation = () => {
   return (

@@ -1,39 +1,51 @@
+import restaurant from "assets/images/portfolio/restaurant.png";
 import crypto from "assets/images/portfolio/crypto.png";
 import csgo from "assets/images/portfolio/csgo.png";
 import wine from "assets/images/portfolio/redwine.jpg";
-import unity from "assets/images/portfolio/unity.png";
+import concerto from "assets/images/portfolio/concerto.png";
+import museum from "assets/images/portfolio/museum.png";
+import portfolio from "assets/images/portfolio/portfolio.png";
 
 export const projectsList = [
   {
     id: 1,
-    title: "Restaurant Ordering Website",
-    logo: crypto,
+    title: "Portfolio Website",
+    logo: portfolio,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
     link: "https://github.com/Alicesyn/order-website",
-    desc: ``,
-    technologies: ["React", "JavaScript", "Express", "Jest", "PostgreSQL"]
+    desc: `This is my personal website containing my portfolio. You are here right now!`,
+    technologies: ["React", "TypeScript"]
   },
   {
     id: 2,
+    title: "Product Ordering Website",
+    logo: restaurant,
+    blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
+    link: "https://github.com/Alicesyn/order-website",
+    desc: `Designed a full-stack app that allows customers to create accounts and submit orders, with an admin page where admins can view order details in a React UI`,
+    technologies: ["React", "JavaScript", "Express", "Jest", "PostgreSQL"]
+  },
+  {
+    id: 3,
     title: "Augmented Reality Museum",
     link: "https://github.com/Alicesyn/AR-Museum-2",
-    logo: unity,
+    logo: museum,
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
     desc: `Created a virtual museum in Unity’s augmented reality, themed under different historical periods
     Utilized Microsoft’s MRTK toolkit to have the app function and deploy on mobile devices and HoloLens`,
     technologies: ["C#", "Unity", "Microsoft MRTK", "Autodesk Maya"]
   },
   {
-    id: 3,
+    id: 4,
     title: "The Final Concerto Game",
-    logo: unity,
+    logo: concerto,
     blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
     link: "https://github.com/Alicesyn/The-Final-Concerto",
     desc: `Managed a group of 6 to produce original music, art, game mechanics, and level designs, resulting in an ‘A’ for the class after an evaluation from over 20 industry professionals`,
     technologies: ["C#", "Unity", "Photoshop"]
   },
   {
-    id: 4,
+    id: 5,
     title: "CS:GO Text Mod",
     logo: csgo,
     blurHash: "L1O^uE0679I00AGT?.H{00y7p2tK",
@@ -42,7 +54,7 @@ export const projectsList = [
     technologies: ["C++"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Cryptocurrency Tracker",
     logo: crypto,
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
@@ -53,7 +65,7 @@ export const projectsList = [
     technologies: ["React", "JavaScript", "Axios"]
   },
   {
-    id: 6,
+    id: 7,
     title: "Wine Quality Data Analysis",
     logo: wine,
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",

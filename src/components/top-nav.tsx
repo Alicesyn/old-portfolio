@@ -2,40 +2,30 @@ import * as React from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Button,
-  Text,
   Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   Stack,
-  Icon
 } from "@chakra-ui/react";
-import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "ColorModeSwitcher";
-import UserIcon from "assets/images/profilepic.jpg";
-import { AiTwotoneThunderbolt } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
-import { MdTimeline } from "react-icons/md";
+import { HashLink } from 'react-router-hash-link';
 
 const webLinks = [
-  { name: "About", path: "/about" },
+  { name: "Home", path: "#" },
+  { name: "Projects", path: "#projects" },
+  { name: "Tech Stack", path: "#tech-stack" },
 ];
 
 const mobileLinks = [
-  { name: "About", path: "/about" },
-  { name: "Tech Stack", path: "/tech-stack" },
-  { name: "Developer Story", path: "/story-timeline" }
-  
+  { name: "About", path: "#" },
+  { name: "Projects", path: "#projects" },
+  { name: "Tech Stack", path: "#tech-stack" },
+  { name: "Developer Story", path: "#story-timeline" }
 ];
 
 interface NavLinkProps {
@@ -47,8 +37,7 @@ interface NavLinkProps {
 
 const NavLink = (props: NavLinkProps) => {
   return (
-    <Link
-      as={RouterNavLink}
+    <HashLink
       px={2}
       py={1}
       rounded={"md"}
@@ -63,21 +52,21 @@ const NavLink = (props: NavLinkProps) => {
       to={props.path}
     >
       {props.name}
-    </Link>
+    </HashLink>
   );
 };
 
 export default function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const menuProps = {
-    bg: useColorModeValue("gray.200", "gray.900"),
-    color: useColorModeValue("blue.500", "blue.200")
-  };
+  // const menuProps = {
+  //   bg: useColorModeValue("gray.200", "gray.900"),
+  //   color: useColorModeValue("blue.500", "blue.200")
+  // };
 
   return (
     <>
-      <Box bg={useColorModeValue("white", "gray.700")} px={4} boxShadow={"lg"}>
+      <Box className='sticky' bg={useColorModeValue("white", "gray.700")} px={4} boxShadow={"lg"}>
         <Flex
           h={16}
           alignItems={"center"}
@@ -94,15 +83,6 @@ export default function TopNav() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>
-              <Avatar
-                as={Link}
-                size={"sm"}
-                href={"/"}
-                src={UserIcon}
-                // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
-              />
-            </Box>
             <HStack
               as={"nav"}
               spacing={4}
@@ -116,50 +96,50 @@ export default function TopNav() {
                   onClose={onClose}
                 />
               ))}
-              <Menu isLazy>
-                <MenuButton
-                  as={Button}
-                  variant="ghost"
-                  size="sm"
-                  px={2}
-                  py={1.5}
-                  fontSize={"1em"}
-                  rounded={"md"}
-                  height={"auto "}
-                  _hover={menuProps}
-                  _expanded={menuProps}
-                  _focus={{ boxShadow: "outline" }}
-                  rightIcon={<BiChevronDown size={18} />}
-                >
-                  Links
-                </MenuButton>
-                <MenuList zIndex={5}>
-                  <Link as={RouterNavLink} to="/tech-stack">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={AiTwotoneThunderbolt}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Tech Stack</Text>
-                      </HStack>
-                    </MenuItem>
-                  </Link>
-                  <Link as={RouterNavLink} to="/story-timeline">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={MdTimeline}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Developer Story</Text>
-                      </HStack>
-                    </MenuItem>
-                  </Link>
-                </MenuList>
-              </Menu>
+              {/*<Menu isLazy>*/}
+              {/*  <MenuButton*/}
+              {/*    as={Button}*/}
+              {/*    variant="ghost"*/}
+              {/*    size="sm"*/}
+              {/*    px={2}*/}
+              {/*    py={1.5}*/}
+              {/*    fontSize={"1em"}*/}
+              {/*    rounded={"md"}*/}
+              {/*    height={"auto "}*/}
+              {/*    _hover={menuProps}*/}
+              {/*    _expanded={menuProps}*/}
+              {/*    _focus={{ boxShadow: "outline" }}*/}
+              {/*    rightIcon={<BiChevronDown size={18} />}*/}
+              {/*  >*/}
+              {/*    Links*/}
+              {/*  </MenuButton>*/}
+              {/*  <MenuList zIndex={5}>*/}
+              {/*    <HashLink to="#tech-stack">*/}
+              {/*      <MenuItem>*/}
+              {/*        <HStack>*/}
+              {/*          <Icon*/}
+              {/*            as={AiTwotoneThunderbolt}*/}
+              {/*            size={18}*/}
+              {/*            color={useColorModeValue("blue.500", "blue.200")}*/}
+              {/*          />*/}
+              {/*          <Text>Tech Stack</Text>*/}
+              {/*        </HStack>*/}
+              {/*      </MenuItem>*/}
+              {/*    </HashLink>*/}
+              {/*    <HashLink to="#story-timeline">*/}
+              {/*      <MenuItem>*/}
+              {/*        <HStack>*/}
+              {/*          <Icon*/}
+              {/*            as={MdTimeline}*/}
+              {/*            size={18}*/}
+              {/*            color={useColorModeValue("blue.500", "blue.200")}*/}
+              {/*          />*/}
+              {/*          <Text>Developer Story</Text>*/}
+              {/*        </HStack>*/}
+              {/*      </MenuItem>*/}
+              {/*    </HashLink>*/}
+              {/*  </MenuList>*/}
+              {/*</Menu>*/}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>

@@ -73,6 +73,7 @@ const Footer = () => {
               size="lg"
               colorScheme={sc.type}
               icon={sc.icon}
+              target="_blank"
               {...iconProps}
             />
           ))}

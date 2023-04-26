@@ -1,5 +1,3 @@
-This is the source for my personal website [mahmad](https://mahmad.me).
-
 ## Built with
 - [Typescript](https://www.typescriptlang.org/)
 - [Reactjs](https://reactjs.org/)
@@ -7,11 +5,18 @@ This is the source for my personal website [mahmad](https://mahmad.me).
 - [Framer Motion](https://www.framer.com/motion/)
 - [react icons](https://react-icons.github.io/react-icons/)
 
-## Screens
-![Home Screen](/src/assets/images/screens/home_page.png)
-![Skills Screen](/src/assets/images/screens/skills.png)
-![OpenSource Screen](/src/assets/images/screens/open_source.png)
+# Getting Started with Create React App
 
-## License
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.

@@ -22,7 +22,7 @@ export const theme = extendTheme({
         },
       },
       a: {
-        color: mode("blue.500", "blue.200")(props),
+        color: mode("gray.500", "gray.200")(props),
         transition: "color 0.15s",
         transitionTimingFunction: "ease-out",
         fontWeight: "500",

@@ -61,14 +61,14 @@ const Card = (props: CardProps) => {
             />
             <Stack spacing={2} pl={3} align="left">
               <Heading
-                  align="left"
+                align="left"
                 fontSize="xl"
                 color={`mode.${colorMode}.career.text`}
               >
                 {title}
               </Heading>
               <Heading
-                  align="left"
+                align="left"
                 fontSize="sm"
                 color={`mode.${colorMode}.career.subtext`}
               >
@@ -117,63 +117,66 @@ const About = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <PageSlideFade>
-      <StaggerChildren>
-        <MotionBox>
-          <Heading>
-            <Flex alignItems="center">
-              <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-                Career
-              </Header>
-              <Stack pl={3}>
-                <Box as={BsFillBriefcaseFill} size="25px" />
-              </Stack>
-            </Flex>
-          </Heading>
-        </MotionBox>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
-          {companies.map((company, index) => (
-            <MotionBox whileHover={{ y: -5 }} key={index}>
-              <Card
-                key={index}
-                title={company.title}
-                role={company.role}
-                skills={company.skills}
-                period={company.period}
-                logo={company.logo}
-                colorMode={colorMode}
-                alt={company.alt}/>
+      <section id='career'>
+        <br/>
+        <PageSlideFade>
+          <StaggerChildren>
+            <MotionBox>
+              <Heading>
+                <Flex alignItems="center">
+                  <Header underlineColor={TURQUOISE} mt={0} mb={0}>
+                    Career
+                  </Header>
+                  <Stack pl={3}>
+                    <Box as={BsFillBriefcaseFill} size="25px" />
+                  </Stack>
+                </Flex>
+              </Heading>
             </MotionBox>
-          ))}
-        </VStack>
-        <Heading>
-          <Flex alignItems="center">
-            <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-              Education
-            </Header>
-            <Stack pl={3}>
-              <Box as={FaGraduationCap} size="25px" />
-            </Stack>
-          </Flex>
-        </Heading>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
-          {institutes.map((institute, index) => (
-            <MotionBox whileHover={{ y: -5 }} key={index}>
-              <Card
-                key={index}
-                title={institute.title}
-                role={institute.role}
-                skills={institute.skills}
-                period={institute.period}
-                logo={institute.logo}
-                colorMode={colorMode}
-                alt={institute.alt}
-              />
-            </MotionBox>
-          ))}
-        </VStack>
-      </StaggerChildren>
-    </PageSlideFade>
+            <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+              {companies.map((company, index) => (
+                <MotionBox whileHover={{ y: -5 }} key={index}>
+                  <Card
+                    key={index}
+                    title={company.title}
+                    role={company.role}
+                    skills={company.skills}
+                    period={company.period}
+                    logo={company.logo}
+                    colorMode={colorMode}
+                    alt={company.alt}/>
+                </MotionBox>
+              ))}
+            </VStack>
+            <Heading>
+              <Flex alignItems="center">
+                <Header underlineColor={TURQUOISE} mt={0} mb={0}>
+                  Education
+                </Header>
+                <Stack pl={3}>
+                  <Box as={FaGraduationCap} size="25px" />
+                </Stack>
+              </Flex>
+            </Heading>
+            <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+              {institutes.map((institute, index) => (
+                <MotionBox whileHover={{ y: -5 }} key={index}>
+                  <Card
+                    key={index}
+                    title={institute.title}
+                    role={institute.role}
+                    skills={institute.skills}
+                    period={institute.period}
+                    logo={institute.logo}
+                    colorMode={colorMode}
+                    alt={institute.alt}
+                  />
+                </MotionBox>
+              ))}
+            </VStack>
+          </StaggerChildren>
+        </PageSlideFade>
+      </section>
   );
 };
 
