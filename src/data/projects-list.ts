@@ -12,7 +12,7 @@ export const projectsList = [
     title: "Portfolio Website",
     logo: portfolio,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
-    link: "https://github.com/Alicesyn/order-website",
+    link: "https://github.com/Alicesyn/alicesyn.github.io",
     desc: `This is my personal website containing my portfolio. You are here right now!`,
     technologies: ["React", "TypeScript", "HTML", "CSS", "ChakraUI"]
   },
@@ -66,7 +66,7 @@ export const projectsList = [
     title: "Wine Quality Data Analysis",
     logo: wine,
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
-    link: "https://gosavehq.com/",
+    link: "",
     desc: `Extracted data from Kaggle to implement predictive models that determine key predictors in quality`,
     technologies: ["R", "Kaggle"]
   }
