@@ -1,9 +1,34 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools"
 
 export const theme = extendTheme({
   fonts: {
     heading: "'Red Hat Display', sans-serif",
     body: "'Red Hat Text', sans-serif",
+  },
+  styles: {
+    global: (props) => ({
+      body: {
+        fontSize: "1.2em",
+        ".deleted": {
+          color: "#ff8383 !important",
+          fontStyle: "normal !important",
+        },
+        ".inserted": {
+          color: "#b5f4a5 !important",
+          fontStyle: "normal !important",
+        },
+      },
+      a: {
+        color: mode("gray.500", "gray.200")(props),
+        transition: "color 0.15s",
+        transitionTimingFunction: "ease-out",
+        fontWeight: "500",
+        _hover: {
+          color: mode("blue.600", "blue.300")(props),
+        },
+      },
+    }),
   },
   components: {
     // Heading: {
