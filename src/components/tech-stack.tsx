@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
+import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
 import { GiSpiderWeb, GiDatabase } from "react-icons/gi";
 import SkillCard from "./skill-card";
@@ -131,22 +131,22 @@ const TechStack = () => {
                     <Text>Database</Text>
                   </HStack>
                 </Tab>
-                <Tab
-                  bg={useColorModeValue("gray.100", "gray.800")}
-                  color={useColorModeValue("gray.600", "gray.500")}
-                  _selected={{
-                    color: "red.800",
-                    bg: "red.100"
-                  }}
-                  mr={2}
-                  mt={2}
-                  onClick={() => filterSkills("devops")}
-                >
-                  <HStack spacing={1}>
-                    <Icon as={AiOutlineCloudServer} />
-                    <Text>DevOps</Text>
-                  </HStack>
-                </Tab>
+                {/*<Tab*/}
+                {/*  bg={useColorModeValue("gray.100", "gray.800")}*/}
+                {/*  color={useColorModeValue("gray.600", "gray.500")}*/}
+                {/*  _selected={{*/}
+                {/*    color: "red.800",*/}
+                {/*    bg: "red.100"*/}
+                {/*  }}*/}
+                {/*  mr={2}*/}
+                {/*  mt={2}*/}
+                {/*  onClick={() => filterSkills("devops")}*/}
+                {/*>*/}
+                {/*  <HStack spacing={1}>*/}
+                {/*    <Icon as={AiOutlineCloudServer} />*/}
+                {/*    <Text>DevOps</Text>*/}
+                {/*  </HStack>*/}
+                {/*</Tab>*/}
               </TabList>
               <TabPanels minHeight={"45vh"}>
                 <TabPanel px={0}>
