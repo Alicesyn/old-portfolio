@@ -2,7 +2,7 @@ import React from "react";
 import {
   FaGithub,
   FaLinkedin,
-    FaPaperclip
+  FaPaperclip
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
@@ -30,7 +30,7 @@ const siteConfig = {
         icon: <FiMail />
       },
       {
-        url: "static/Quynh-Anh_Vu_Resume",
+        url: "static/Quynh-Anh_Vu_Resume.pdf",
         label: "Resume",
         type: "orange",
         icon: <FaPaperclip />
